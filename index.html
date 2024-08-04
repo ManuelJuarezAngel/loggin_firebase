@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <h3 class="text-center">Login</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" class="form-control" placeholder="Password">
+                        </div>
+                        <button id="login-email" class="btn btn-primary btn-block">Iniciar Sesion</button>
+                        <button id="signup-email" class="btn btn-secondary btn-block">Crear Cuenta</button>
+                        <hr>
+                        <button id="login-google" class="btn btn-danger btn-block">Iniciar sesion con Google</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
